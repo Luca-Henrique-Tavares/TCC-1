@@ -46,6 +46,7 @@ def dici_e_sus():
         print(e)
     dicionario = {}
     k = 0
+    #termos em que há a correspondência entre os dataframes
     try:
         for i in range(len(df_sus)):
             for j in range(len(df_dici)):
@@ -124,6 +125,7 @@ def dici_e_sus():
                         'acesso em': data_str
                     }
                     k = 1
+            #termos em que não há correspondência entre os dataframes
             if(k == 0):
                 for c in range(len(df_sus_yt)):
                         if df_sus['id'][i] == df_sus_yt['dici_teste_id'][c]:
@@ -205,6 +207,7 @@ def dici_e_sus():
                 k = 0
     except Exception as e:
         print(e)
+    #verificação dos termos da base de dados medline
     try:
         for i in range(len(df_dici)):
             for j in range(len(df_sus)):
@@ -290,6 +293,7 @@ def dici_e_sus():
                 print(f"O termo: {df_dici['title'][i]} já está na tabela unica")
     except Exception as e:
         print(e)
+    #Aedcionamos aqui os termos da tabela de termos de anatomia
     try:
         df_anatomia = pd.read_sql_table('anatomia', con=connection())
     except Exception as e:
