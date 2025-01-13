@@ -4,8 +4,8 @@ Olá e seja bem vindo ao backend do projeto de TCC Teki Responde. Nessa seção 
 
 ## Nome de códigos e suas funções na pasta main
 O pilar da base de dados foi constituída por meio dos códigos abaixo. Para obter informações extras sobre o processo, recomenda-se ler o artigo do projeto. Basicamente:
-SUS,MEDLINE E Pydictionary formam a base e informam todos os termos disponíveis;
-Youtube e Links extras complementam as informações;
++ SUS,MEDLINE E Pydictionary formam a base e informam todos os termos disponíveis;
++ Youtube e Links extras complementam as informações;
 
 | Código Python | Função |
 | ------------- | ------ |
@@ -71,7 +71,7 @@ Logo em seguida, execute o seguinte código:
 ```
 </details>
 
-# 6-Rode o código dicionario.py
+## 6-Rode o código dicionario.py
 Este traduzirá todos os conceitos e termos para português com o Google tradutor.
 
 ## 7-Rode o código anatomia.py
@@ -169,6 +169,5 @@ trará os links de vídeos sobre os assuntos
 Utilizará os dados das tabelas anteriores e dados2.csv que já terá sido executado no primeiro código mysql. Dessa forma você terá uma tabela com todas as informações!
 
 
-
-# Observações Finais:
+## Observações Finais:
 Os códigos de web scraping foram produzidos em abril de 2024. Por isso, caso seja necessário, utilize os arquivos .csv como tabela para ser colocada no banco de dados no lugar do Scraping, nas situações dos respectivos códigos. 
