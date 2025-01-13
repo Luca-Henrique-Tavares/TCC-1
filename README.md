@@ -1,5 +1,7 @@
 # TCC-1
- 
+
+Este repositório possui os códigois utilizados durante todo o processo de criação do TCC. Portanto, alguns podem estar obsoletos e terem sido testes, portanto, recomenda-se seguir o tutorial presente  para melhor compreensão.
+
 Para melhor experiência do material produzido, sugerimos que a seguinte ordem seja seguida. Grato!
 
 # 1- Crie o Schema no seu banco de dados:
