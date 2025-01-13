@@ -1,10 +1,20 @@
 # TCC-1
 
-# Nome de códigos e suas funções
+# Nome de códigos e suas funções na pasta main
 | Código Python | Função |
 | ------------- | ------ |
 | Anatomia.py   | Extração Pydcitionary|
-| Bd.py         | Arquivo .xml para tabela do mysql|
+| Bd.py         | Arquivo .xml do medline e o arquivo .csv do processo de obtenção dos links extras para tabela do mysql|
+| dicionario.py | Retira as informações da tabela do Medline, faz o parsing e as traduz|
+| output.py     | Código Python que simula o output da tabela após todas as operações|
+| sus.py        | Web Scraping do site do SUS|
+| tabelaunica.py | Organiza todas as informações recebidas após o final do processo em uma única tabela no mysql|
+| troca_de_termos.py | Utiliza a lógica Fuzzy para comparar termos correspondentes entre as informações do SUS e do Medline|
+| yt.py | Pesquisa os títulos correspondentes a tabela do sus no youtube|
+| yt2.py | Pesquisa os titulos correspondentes a tabela do Medline no youtube|
+| yt3.py | Pesquisa os titulos correspondentes a tabela de anatomia no youtube|
+
+
 
 
 Este repositório possui os códigois utilizados durante todo o processo de criação do TCC. Portanto, alguns podem estar obsoletos e terem sido testes, portanto, recomenda-se seguir o tutorial presente  para melhor compreensão.
