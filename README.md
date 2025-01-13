@@ -103,4 +103,5 @@ trará os links de vídeos sobre os assuntos
 # 9- Rode o código tabela única.py
 Utilizará os dados das tabelas anteriores e dados2.csv que já terá sido executado no primeiro código mysql. Dessa forma você terá uma tabela com todas as informações!
 
-Observação: O código SUS.py foi produzido em abril de 2024. Por isso, caso seja necessário, utilize o arquivo SUS.csv como tabela para ser colocada no banco de dados no lugar do Scraping. 
+# Observações Finais:
+Os códigos de web scraping foram produzidos em abril de 2024. Por isso, caso seja necessário, utilize os arquivos .csv como tabela para ser colocada no banco de dados no lugar do Scraping, nas situações dos respectivos códigos. 
