@@ -1,8 +1,8 @@
 # TCC-1
-# Introdução
+## Introdução
 Olá e seja bem vindo ao backend do projeto de TCC Teki Responde. Nessa seção você vai encontrar informações sobre os códigos presentes nesse repositório
 
-# Nome de códigos e suas funções na pasta main
+## Nome de códigos e suas funções na pasta main
 O pilar da base de dados foi constituída por meio dos códigos abaixo. Para obter informações extras sobre o processo, recomenda-se ler o artigo do projeto. Basicamente:
 SUS,MEDLINE E Pydictionary formam a base e informam todos os termos disponíveis;
 Youtube e Links extras complementam as informações;
@@ -20,10 +20,10 @@ Youtube e Links extras complementam as informações;
 | yt2.py | Pesquisa os titulos correspondentes a tabela do Medline no youtube|
 | yt3.py | Pesquisa os titulos correspondentes a tabela de anatomia no youtube|
 
-# Links Extras
+## Links Extras
 Após a definição dos pilares da base de dados, informações extras sobre as informações foram extraídas. Na pasta links_extras é possível encontrar todos os códigos utilizados neste processo.
 
-# Arquivos não pertecentes a python e ao qu se referem
+## Arquivos não pertecentes a python e ao qu se referem
 A tabela a seguir explica a função de arquivos .csv ou .xml que se referem ao scraping e/ou a confecção da base de dados.
 
 | Arquivos | Funções |
@@ -44,19 +44,19 @@ Este repositório possui os códigois utilizados durante todo o processo de cria
 
 Para melhor experiência do material produzido, sugerimos que a seguinte ordem seja seguida. Grato!
 
-# 1- Crie o Schema no seu banco de dados:
+## 1- Crie o Schema no seu banco de dados:
 No meu caso, caso não queira alterar os códigos feitos em Python nomeie o de teste_tcc. Caso contrário, use o atalho ctrl h para modificar teste_tcc em todos os arquivos .py para o nome ao seu gosto
 
-# 2-Para todos os os arquivos .py use o atalho Ctrl + f para localizar:
+## 2-Para todos os os arquivos .py use o atalho Ctrl + f para localizar:
  engine = create_engine('mysql+pymysql://root:123456@localhost/teste_tcc')
 E substitua sua senha e seu usuário
 
-# 3-Instale as bibliotecas em Python caso você não as tenha instalado
+## 3-Instale as bibliotecas em Python caso você não as tenha instalado
 
-# 4-No código BD.py antes de rodar:
+## 4-No código BD.py antes de rodar:
 dê um ctrl h e troque dici por dici_teste
 
-# 5- Rode o código: bd.py
+## 5- Rode o código: bd.py
 Logo em seguida, execute o seguinte código:
 
 <details>
@@ -74,7 +74,7 @@ Logo em seguida, execute o seguinte código:
 # 6-Rode o código dicionario.py
 Este traduzirá todos os conceitos e termos para português com o Google tradutor.
 
-# 7-Rode o código anatomia.py
+## 7-Rode o código anatomia.py
 Este adcionará novas palavras e suas definições em outra tabela
 Logo em seguida, rode o seguinte código na tabela anatomia:
 <details>
@@ -128,9 +128,19 @@ UPDATE teste_tcc.anatomia SET texto = '{\'Substantivo\': [\'a parte da perna de 
 UPDATE teste_tcc.anatomia SET texto = '{\'Substantivo\': [\'placa córnea cobrindo e protegendo parte da superfície dorsal dos dedos\']}' WHERE (`titulo` = 'Unhas');
 UPDATE teste_tcc.anatomia SET texto = '{\'Substantivo\': [\'uma estrutura em um órgão oco (como o coração\', \'controle que consiste em um dispositivo mecânico para controlar o fluxo de um fluido\']}' WHERE (`titulo` = 'Válvulas');
 UPDATE teste_tcc.anatomia SET texto = '{\'Substantivo\': [\'um vaso sanguíneo que transporta sangue dos capilares em direção ao coração\', \'um estilo ou maneira distinta\', \'qualquer um dos feixes vasculares ou costelas que formam a estrutura ramificada dos tecidos condutores e de suporte em uma folha ou outro órgão vegetal\']}' WHERE (`titulo` = 'Veias');
-6- Rode o Código SUS.py
+```
+
+</details>
+
+## 8- Rode o Código SUS.py
 Este trará informação sobre a prevenção de doenças e seus tratamentos no Brasil. 
 Rode o código na tabela mysql sus2:
+
+<details>
+ 
+ <summary>Código abaixo:</summary>
+
+ ```
 OBS: USAR O SEGUINTE CÓDIGO:
 ALTER TABLE `teste_tcc`.`sus2`
 ADD COLUMN `id` INT NOT NULL AUTO_INCREMENT FIRST,
@@ -147,15 +157,15 @@ UPDATE `teste_tcc`.`sus2` SET `texto_prevencao` = 'Prevenção Compartilhe:  Com
 
 </details>
 
-# 8- Rode o código troca_de_termos:
+## 9- Rode o código troca_de_termos:
 Este definirá os termos semelhantes entre as tabelas e criará uma chave estrangeira na tabela do sus.
 
-# 9- Dê o comando ctrl f e substitua a variável key por sua chave nos códigos yt.py,yt2.py e yt3.py
+## 10- Dê o comando ctrl f e substitua a variável key por sua chave nos códigos yt.py,yt2.py e yt3.py
 
-# 10- Rode os códigos yt.py,yt2.py e yt3.py 
+## 11- Rode os códigos yt.py,yt2.py e yt3.py 
 trará os links de vídeos sobre os assuntos
 
-# 11- Rode o código tabela única.py
+## 12- Rode o código tabela única.py
 Utilizará os dados das tabelas anteriores e dados2.csv que já terá sido executado no primeiro código mysql. Dessa forma você terá uma tabela com todas as informações!
 
 
