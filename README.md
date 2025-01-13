@@ -1,5 +1,12 @@
 # TCC-1
 
+# Nome de códigos e suas funções
+| Código Python | Função |
+| ------------- | ------ |
+| Anatomia.py   | Extração Pydcitionary|
+| Bd.py         | Arquivo .xml para tabela do mysql|
+
+
 Este repositório possui os códigois utilizados durante todo o processo de criação do TCC. Portanto, alguns podem estar obsoletos e terem sido testes, portanto, recomenda-se seguir o tutorial presente  para melhor compreensão.
 
 Para melhor experiência do material produzido, sugerimos que a seguinte ordem seja seguida. Grato!
@@ -102,6 +109,8 @@ trará os links de vídeos sobre os assuntos
 
 # 9- Rode o código tabela única.py
 Utilizará os dados das tabelas anteriores e dados2.csv que já terá sido executado no primeiro código mysql. Dessa forma você terá uma tabela com todas as informações!
+
+
 
 # Observações Finais:
 Os códigos de web scraping foram produzidos em abril de 2024. Por isso, caso seja necessário, utilize os arquivos .csv como tabela para ser colocada no banco de dados no lugar do Scraping, nas situações dos respectivos códigos. 
