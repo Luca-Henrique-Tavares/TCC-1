@@ -1,6 +1,10 @@
 # TCC-1
+# Introdução
+Olá e seja bem vindo ao backend do projeto de TCC Teki Responde. Nessa seção você vai encontrar informações sobre os códigos presentes nesse repositório
 
 # Nome de códigos e suas funções na pasta main
+O pilar da base de dados foi constituída por meio dos códigos abaixo. Para obter informações extras sobre o processo, recomenda-se ler o artigo do projeto.
+
 | Código Python | Função |
 | ------------- | ------ |
 | Anatomia.py   | Extração Pydcitionary|
@@ -14,7 +18,23 @@
 | yt2.py | Pesquisa os titulos correspondentes a tabela do Medline no youtube|
 | yt3.py | Pesquisa os titulos correspondentes a tabela de anatomia no youtube|
 
+# Links Extras
+Após a definição dos pilares da base de dados, informações extras sobre as informações foram extraídas. Na pasta links_extras é possível encontrar todos os códigos utilizados neste processo.
 
+# Arquivos não pertecentes a python e ao qu se referem
+
+| Arquivos | Funções |
+|--------  | ------- |
+|backup_dados.csv | Extrações dos links extras|
+|dados_formatados | Extrações dos links extras|
+| dados2.csv | Extrações dos links extras |
+| dici.xml | arquivo .xml disponibilizado no site do NIH|
+| dicionario.csv | Conceitos dos termos de anatomia humana|
+| sus.csv | Arquivo contendo as informações do scraping do site do SUS|
+| tabelaunica.csv | Arquivo que contém todas as informações da base de dados|
+|youtube_anat.csv | Resultado das buscas feitas via API do Youtube da tabela de anatomia|
+|youtube_dici.csv | Resultado das buscas feitas via API do Youtube da tabela do Medline|
+|youtube_sus.csv | Resultado das buscas feitas via API do Youtube da tabela do SUS|
 
 
 Este repositório possui os códigois utilizados durante todo o processo de criação do TCC. Portanto, alguns podem estar obsoletos e terem sido testes, portanto, recomenda-se seguir o tutorial presente  para melhor compreensão.
