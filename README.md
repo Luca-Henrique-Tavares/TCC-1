@@ -4,14 +4,19 @@ Para melhor experiência do material produzido, sugerimos que a seguinte ordem s
 
 1- Crie o Schema no seu banco de dados:
 No meu caso, caso não queira alterar os códigos feitos em Python nomeie o de teste_tcc. Caso contrário, use o atalho ctrl h para modificar teste_tcc em todos os arquivos .py para o nome ao seu gosto
+
 2-Para todos os os arquivos .py use o atalho Ctrl + f para localizar:
  engine = create_engine('mysql+pymysql://root:123456@localhost/teste_tcc')
 E substitua sua senha e seu usuário
+
 3-Instale as bibliotecas em Python caso você não as tenha instalado
+
 4-No código BD.py antes de rodar:
 dê um ctrl h e troque dici por dici_teste
+
 4- Rode o código: bd.py
 Logo em seguida, execute o seguinte código:
+
 #CÓDIGOS NECESSÁRIOS PARA SE MODIFICAR O MYSQL E RETIRAR DUPLICATAS EM ESPANHOL
 #SET SQL_SAFE_MODE = 0;
 #DELETE FROM `dici` WHERE `language` = 'Spanish';
